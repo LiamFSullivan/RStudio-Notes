@@ -1,1 +1,35 @@
+#Cool Visual Aids
+https://www.rayshader.com/ 
+https://r-graph-gallery.com/animation.html
+https://r-graph-gallery.com/
+https://dplyr.tidyverse.org/ 
+https://www.usu.edu/math/amlc/files/r-studio-reference-sheets-compilation.pdf
+https://danstich.github.io/worst-r/ 
+https://www.tidyverse.org/packages/ 
+https://ggplot2.tidyverse.org/
+https://dplyr.tidyverse.org/
+
+
+#Data & File Management
+Avoid capitals & space
+Do not use symbology
+Make column headings easy to remember
+
+#Reshaping Data
+Wide bad -> Long Good
+
+#Data Structures
+Numeric: A number that can have decimals
+Integers: A whole number (no decimals)
+Character: A text string
+Factors: A categorial variable 
+
+#Data Types 
+Vectors: One-dimensional collectiokn of values (one column)
+Data Frame: Two-dimensional (multiple columns)
+
+Data Type: 
+Continuous
+Discrete
+
 
