@@ -14,6 +14,7 @@ Console
 
 Source
          Description                                       Key Functions
+Set working directory                                     Ctrl+shift+H
 Go to File/Function		                                    Ctrl+. [period]
 Move cursor to Source Editor	         	                  Ctrl+1
 Toggle document outline		                                Cmd+Shift+O
