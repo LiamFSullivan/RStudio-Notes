@@ -1,0 +1,61 @@
+### Chapter 3: Working with Data 
+
+Standard data organization (an most importantly scrubbing is completed in excel. 
+Excel and R communicate in the wave forms of .csv files, or Comma Separated Values. R uses the function "read.csv" to load in these files. Using 
+Dr. Stitch's "ctr_fish.csv" let's load one in. 
+
+# Start by reading in the data
+am_shad <- read.csv("data/ctr_fish.csv")
+
+Sweet no issues (because working directory was set correctly). Now this data file is pretty substantial so instead of burning our eyes with thousands
+of rows, let's take a simplistic look using the head function. 
+
+# Look at the first 10 rows
+head(am_shad, 10)
+
+Our console should now display our data like so: 
+
+Sex Age Length yearCollected backCalculated Mass
+1    B   1     13          2010           TRUE   NA
+2    B   1     15          2010           TRUE   NA
+3    B   1     15          2010           TRUE   NA
+4    B   1     15          2010           TRUE   NA
+5    B   1     15          2010           TRUE   NA
+6    B   1     15          2010           TRUE   NA
+7    B   1     16          2010           TRUE   NA
+8    B   1     16          2010           TRUE   NA
+9    B   1     16          2010           TRUE   NA
+10   B   1     16          2010           TRUE   NA
+
+An important note, the NA's are supposed to be there. After all the columns are empty. In a typical data set, the analysis is being done with your own data,
+however, because this is not our data, we could use a translation courtesy of our author:
+
+Sex: fish gender. B stands for ‘buck’ (males), R stands for ‘roe’ (females).
+
+Age: an integer describing fish age.
+
+Length: fish length at age (cm).
+
+yearCollected: the year in which the fish was caught.
+
+backCalculated: a logical indicating whether or not the length of the fish was back-calculated from aging.
+
+Mass: the mass of individual fish (in grams). Note that this is NA for all ages that were estimated from hard structures (so all cases for which backCalculated == TRUE).
+
+#Thanks!
+
+Alrighty now let's keep on trucking. 
+
+R (unfortunately) cannot tell us anything without using a function. One of the most important is the str function. This simple line of code can save us massive headaches in the future. 
+So let's str our data. 
+
+str(am_shad)
+'data.frame':	16946 obs. of  6 variables:
+ $ Sex           : chr  "B" "B" "B" "B" ...
+ $ Age           : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ Length        : num  13 15 15 15 15 15 16 16 16 16 ...
+ $ yearCollected : int  2010 2010 2010 2010 2010 2010 2010 2010 2010 2010 ...
+ $ backCalculated: logi  TRUE TRUE TRUE TRUE TRUE TRUE ...
+ $ Mass          : int  NA NA NA NA NA NA NA NA NA NA ...
+
+Ok sweet. Now we know how R sees our data. If you're unfamiliar with what these mean, here's the definitions:
