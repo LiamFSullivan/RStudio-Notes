@@ -58,4 +58,17 @@ str(am_shad)
  $ backCalculated: logi  TRUE TRUE TRUE TRUE TRUE TRUE ...
  $ Mass          : int  NA NA NA NA NA NA NA NA NA NA ...
 
-Ok sweet. Now we know how R sees our data. If you're unfamiliar with what these mean, here's the definitions:
+Ok sweet. Now we know how R sees our data. But now I want a summary of what this data looks like. Hmmmmmm... I know, let's use the summary function. 
+
+#Summarize this data. 
+summary(am_shad)
+    
+Sex                 Age            Length      yearCollected  backCalculated       Mass      
+ Length:16946       Min.   :1.000   Min.   : 3.00   Min.   :2010   Mode :logical   Min.   :   0   
+ Class :character   1st Qu.:2.000   1st Qu.:31.00   1st Qu.:2011   FALSE:3046      1st Qu.: 900   
+ Mode  :character   Median :3.000   Median :38.00   Median :2012   TRUE :13900     Median :1120   
+                    Mean   :3.155   Mean   :36.39   Mean   :2012                   Mean   :1173   
+                    3rd Qu.:4.000   3rd Qu.:43.00   3rd Qu.:2013                   3rd Qu.:1440   
+                    Max.   :7.000   Max.   :55.00   Max.   :2014                   Max.   :3280   
+                                                                                   NA's   :14115  
+
